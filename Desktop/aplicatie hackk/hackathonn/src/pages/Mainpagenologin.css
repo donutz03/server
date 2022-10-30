@@ -1,0 +1,38 @@
+.navbardiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.navbaritems {
+  align-items: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.listItem {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buttonsmainpagenologin {
+  border-color: lightgreen;
+  background-color: lightgreen;
+
+  border-radius: 5px;
+}
