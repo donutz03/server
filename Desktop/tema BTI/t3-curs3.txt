@@ -1,0 +1,15 @@
+t4-curs 3-curs 4- Program-Coduri numerice
+
+1.Coduri numerice ponderate (8421, 2421, 84-2-1, bichinar)
+Realizati programul pt codificarea cifrelor de la 0-9 in unul din codurile de mai sus.
+
+2.Coduri numerice neponderate (Exces3, Gray, 2 din 5)
+Realizati programul pt codificarea cifrelor de la 0-9 in unul din codurile de mai sus.
+
+Programul este realizat in orice limbaj de programare doriti.
+Fiecare punct trebuie sa contina urmatoarele elemente:
+- concept teoretic
+- formula de calcul
+- program sursa + EXPLICATII
+- print screen cu rezultatul rularii programului
+- bibliografie

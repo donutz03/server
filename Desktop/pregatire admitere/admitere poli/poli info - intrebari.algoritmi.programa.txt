@@ -1,0 +1,276 @@
+Prioritatea operatorilor: a%b, a*b, a/b se fac inainte de <,>,=; iar >,!=,= se executa inainte de || si &&
+
+Se pot construi 2^[n(n-1)/2] grafuri neorientate distincte cu n noduri
+
+Definiție: Un graf orientat este turneu, dacă oricare ar fi două vârfuri i şi j, i≠j, între ele există un singur arc: arcul (i,j) sau arcul (j,i).
+
+Proprietăți:
+
+Orice graf turneu este graf complet.
+Avem 2^[n*(n-1)/2] grafuri turneu cu n noduri.
+În orice graf turneu există un drum elementar care trece prin toate vârfurile grafului.
+
+
+Fie G=(V, M) un graf neorientat. Graful G, fără vârfuri izolate, este eulerian dacă si numai daca este conex si gradele tuturor vârfurilor sale sunt numere pare.
+
+         Fie G=(V, M) un graf neorientat. Se numeste lant eulerian, in graful G, un lant care contine toate muchiile grafului G, fiecare muchie apărând în lant o singură dată.
+
+         Fie G= (V,M) un graf neorientat. Se numeste ciclu eulerian, în graful G, un ciclu care contine toate muchiile grafului G, fiecare muchie apărând în ciclu o singură data
+
+
+
+k=1: 82f(2)
+f(2)!=2+1=> i=2;i<=82;i++ => 81f(3) x=81
+f(1):164f(2) 
+
+Teoremă: Numărul de grafuri orientate complete cu n noduri este 3^n*(n-1)/2 
+
+interclasarea are complexitate O(m+n)
+
+Două vârfuri între care există muchie se numesc adiacente.
+matricea de adiacenta: contine doar adiacentele, nu si drumurile
+
+
+sortare:complexitate timp O(nlogn); complexitate spatiu
+numar prim: complexitate O(nsqrt(m)); unde m^2<=numarul meu. care are nr de pasi mai mic dintre toate astea?
+determinarea elementului maxim: O(n)
+determinarea unicitatii tuturor elementelor din sir:O(n^2)
+generarea tuturor permutarilor unui sir cu n elemente: complexitate timp (O(2^n))
+suma elementelor care apar de exact 2 ori in sir: complexitate O(n^2)
+
+
+a31 = 1+3-1=3
+a21 = 1+2-1=2
+a11 = 1+1-1=1
+a32 = 3+2-1=4
+a22 = a21+a32=2+4=6
+a12 = a11+a22 = 1+6=7
+a33 = 3+3-1=5
+a23 = a22+a33=6+5=11
+a13 = a12+a23=7+11=18
+a34 = 3+4-1=6
+a24 = a23+a34=11+6=17
+a14 = a13+a24=18+17=35
+BACKTRACKING = PRODUS CARTEZIAN
+
+Intr-un lot de 50 de piese 10 sunt defecte. Se iau la intamplare 5 piese. Vrem sa calculam probabilitatea ca trei din cele cinci sa nu fie defecte.
+schema lui bernoulli neintoarsa: C40 cate 3 * C10 cate 2 / C50 cate 5
+
+'0'=48
+'9'=48+9 = 57
+'A'=65
+'a'='A'+32 = 65+32=97
+
+Graful G se numește graf complet dacă oricare două vârfuri
+distincte ale sale sunt adiacente.
+
+Functia strlen : int strlen(nume_sir);  – returneaza lungimea efectiva a unui sir (fara a numara terminatorul de sir). Spre exemplu:
+
+char a[50] = “ora de informatica”; -> strlen(a) = 18
+
+Functia strcpy : strcpy(sir_destinatie, sir_sursa); – copiaza sirul sir_sursa in sir_destinatie (se simuleaza atribuirea a = b).
+char a[50]=”primul sir”,b[40]=”al doilea sir”;
+a=b; //eroare
+strcpy(a,b); // -> a = ”al doilea sir”; b=”al doilea sir”;
+
+ATENTIE!! Nu este permisa atribuirea intre doua siruri de caractere folosind operatorul =. Atribuirea se face folosind functia strcpy .
+
+Functia strcat : strcat(dest,sursa); – adauga sirului dest sirul sursa. Sirul sursa ramane nemodificat. Operatia se numeste concatenare si nu este
+comutativa.
+char a[20]=”vine ”,*b=”vacanta?”;
+strcat(a,b); // - > a = ”vine vacanta?”;
+
+Functia strncat : strncat(dest,sursa,nr); – adauga sirului dest primele nr caractere din sirul sursa. Sirul sursa ramane nemodificat.
+char a[20]=”vine ”,*b=”vacanta?”;
+strncat(a,b,4);// -> a = ”vine vaca”;
+
+
+Functia strchr : strchr(sir,c); – are rolul de a cauta caracterul c in sirul sir. Cautarea se face de la stanga la dreapta, iar functia intoarce 
+adresa subsirului care incepe cu prima aparitie a caracterului c. Daca nu este gasit caracterul, functia returneaza NULL (adresa goala). Diferenta
+dintre adresa sirului initial si cea a subsirului returnat reprezinta chiar pozitia caracterului cautat in sirul dat.
+
+cout<<strchr(a,b); //se tipareste ”ta este un sir”;
+cout<<strchr(a,c);// nu se tipareste nimic;
+cout<<strchr(c, ’d’)-c; //se afisaza pozitia primei aparitii a lui 'd'
+cout<<strrchr(c, 'd')-c+1; //se afisaza pozitia ultimei aparitii a lui 'd'
+
+char s[30]=”AdmiTerE”;
+int i;
+var s: string[29];
+ i: integer;
+12
+for (i=0; i<strlen(s); i++)
+ if (s[i]>=’A’ && s[i]<=’Z’)
+ s[i]=s[i]+32;
+ else
+ strcpy(s+i, s+i+1);
+cout<<s; | printf(“%s”, s);
+
+strcpy (s+i, s+i+1) e la fel cu delete (s,i,1): se sterge caracterul de pe pozitia i si se inlocuieste cu cel de pe i+1
+
+Indicații: Avem formula: Nrmaxmuchii=(n-p)(n-p+1)/2, unde n reprezintă numărul de
+noduri iar p numărul de componente conexe.
+
+2^(n(n-1)/2) grafuri distincte se pot forma cu 5 noduri
+
+return opreste functia. ce e sub return nu se executa niciodata
+
+unsigned inseamna numere pozitive, int inseamna numere intregi
+
+intr-i stiva cu k varful, k se afla pe pozitia s.k. stiva are un numar maxim de elemente, sa zic 100. daca s.k<99 atunci pot sa mai adaug un element
+in varful stivei; s.v[++s.k]=x;
+
+for(i='0';i<='9';i++) del(s,i) - asa se sterg cifrele dintr-un sir de caractere
+
+Un graf orientat G=(V,E) este tare conex dacă pentru orice pereche de noduri distincte (x,y) există cel puțin un drum de la x la y și există cel 
+puțin un drum de la y la x.
+
+Un graf neorientat se numeste conex daca oricare ar fi x si y varfuri din graf exista lant intre x si y.
+
+grad exterior al unui nod: nr arcelor care ies din x
+grad interior al unui nod: nr arcelor care intra in x
+
+Numărul ciclurilor hamiltoniene dintr-un graf complet cu n noduri este:(n-1)!/2. ex, numarul ciclurilor hamiltoniene dintr-un graf complet cu 
+5 noduri este (5-1)!/2 = 4!/2 = 4x3x2x1/2 = 12
+
+Lanțul care conține numai vârfuri distincte, două câte două, este lanț elementar. neelementar = se repeta varfuri
+
+Definiție: Se numește ciclu un lanț simplu în care primul vârf este identic cu ultimul. Dacă toate vârfurile sunt distincte, mai puțin primul și 
+ultimul, se numește ciclu elementar. neelementar= se repeta varfuri in afara de ultimul
+
+Numărul valorilor 1 din matricea de adiacență asociată este egal cu dublul numărului
+de muchii.
+
+Daca un graf cu n noduri are p comp conexe,atunci numarul minim de muchii care trebuie adaugat ca sa devina conex este p-1.
+
+Daca un graf conex cu n noduri are n-1 muchii, atunci orice pereche de noduri este legata printr-un lant si numai unul.
+
+Daca un graf neorientatat cu n noduri si m muchii este conex, numarul maxim de muchii care se pot elimina pentru a obtine un graf partial conex este: m-n+1.
+
+Daca un graf are n noduri,m muchii si p componente conex, numarul de muchii care trebuie eliminate pentru a obtine un graf partial aciclic este egal cu m-n+p.
+
+Teorema: Un graf care nu contine noduri izolate este eulerian daca si numai daca este conex si gradul tuturor nodurilor sunt numere pare.
+
+https://invata.info/2017/03/31/functii-pentru-operatii-cu-siruri-de-caractere-c/
+
+varianta 1
+1 a
+2 c
+3 f
+4 d
+5 b 
+6 b
+7 a
+8 d
+9 c 
+10 c
+11 c
+12 e
+13 a
+14 f
+15 c
+
+varianta 2
+1 c
+2 d
+3 e
+4 d
+5 f
+6 b
+7 d
+8 b
+9 e
+10 c
+11 f
+12 a
+13 c
+14 e
+15 f
+
+varianta 10 
+4 d
+5 a
+7 e
+varianta 11
+3 f
+4 d
+13 b
+15 b
+
+
+7.51-2.83=4.68
+
+
+
+CHICHITE ----- chichite ----- chichite ---- chichite ----- chichite ----- CHICHITE
+
+VARIANTA 2 ----- VARIANTA 2 ----- VARIANTA 2 ----- VARIANTA 2 ----- VARIANTA 2
+
+atentie mare:
+for fara acolada, respectiv while probabil si do while executa operatia pana la ; (punct si virgula)
+for fara acolada, respectiv while probabil si do while executa toate operatiile cu , (virgula) intre ele pana la primul ; (punct si virgula)
+
+6. Răspuns corect: b)
+ 0010
+ 0100
+ 1000
+ 0001
+Indicații: Se observă că fiecărui tabloul bidimensional îi corespunde o permutare.
+Permutarea este o funcție f:{1,2,..,n}->{1,2,..,n}, bijectivă. Notăm linia 1000 cu 1, linia 0100
+cu 2, linia 0010 cu 3 și linia 0001 cu 4. Observăm ca permutarea pentru tabloul bidimensional
+dat este (3,1,4,2) iar permutarea următoare acesteia din punct de vedere lexicografic este
+(3,2,1,4), corespunzătoare tabloului bidimensional de la punctul b.
+
+
+11. Răspuns corect: f) 45
+Indicații: Avem formula: Nrmaxmuchii=(n-p)(n-p+1)/2, unde n reprezintă numărul de
+noduri iar p numărul de componente conexe.
+
+VARIANTA 3 ----- VARIANTA 3 ----- VARIANTA 3 ----- VARIANTA 3 ----- VARIANTA 3
+
+14. Răspuns corect: b)
+Indicații: Numărul ciclurilor hamiltoniene dintr-un graf complet cu n noduri este:
+ (n-1)!/2.
+
+
+VARIANTA 4 ----- VARIANTA 4 ----- VARIANTA 3 ----- VARIANTA 3 ----- VARIANTA 3
+
+
+5. 	
+n=42015; m=0;
+while(n>0)
+{
+ m=m*100+n/10%10*10+n%10;
+ n/=100;
+ }
+
+Indicații: Se mută grupurile de câte 2 cifre. Datorită numărului impar de cifre a lui n, în m
+apare o cifră în plus.
+
+(1,1,1,1,2,2) – nu poate fi conex deoarece are doar 4 muchii
+Un graf conex are minim n-1 muchii, unde n este numarul de varfuri
+
+adresa modifica valoarea doar daca se efectueaza o operatie pe adresa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

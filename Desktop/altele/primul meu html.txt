@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <title>Demo - caiet de sarcini</title>
+    <link rel = "stylesheet" href="style.css" type ="text/css" media = "screen" charset = "utf-8">
+  </head>
+  <h1> Jurnalul meu </h1>
+  <h2> Invatand HTML </h2>
+  <p> Fac primii pasi in a scrie HTML. Din ce observ este vorba de crearea de pagini Web. Structura HTML este relativ simpla. </p>
+    </html>
+                                                 

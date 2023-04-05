@@ -1,0 +1,13 @@
+  <div>
+      <p>Choose a role</p>
+      <select name="role" id="role" value={role} onChange={(e)=>setRole(e.target.value)}>
+       <option value="investor">Investor</option>
+       <option value="antrepreneur">Antrepreneur</option>
+       <option value="individual">Individual</option>
+      </select>
+     </div>
+
+
+git checkout -b numelebranchului (face branch nou pe local)
+
+git push origin -u numelebranchului (il duc si pe branch)

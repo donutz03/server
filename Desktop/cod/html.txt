@@ -1,0 +1,402 @@
+<!doctype HTML> must appear once, at the top of the page (before any HTML tags). arata ca pagina web 
+este de tipul HTML5
+<html> code here </html> establishes where html code starts and ends
+<html lang="en"> </html> specifies English as the language, helps search engines
+<head> name of heading </head> establishes where a header starts and ends
+<title> name of webpage </title> establishes how a page is named in the search bar
+<body> this is the code right after the open <html> </body>
+<body style="background-color:powderblue;> defineste culoare de fundal
+<h1>This is a heading</h1> the most important heading
+<h1 style="font-size:60px;">Add heading here<h1> titlu cu dimensiunea fixata
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<h1 style="color:blue;">This is a heading</h1>
+<h1 style="font-family:verdana;">This is a heading</h1> titlu cu fontul verdana
+<h1 style="font-size:300%;">This is a heading</h1> titlu cu dimensiunea marita
+<h1 style="text-align:center;">Centered Heading</h1> titlu centrat pe pagina
+<h1 style="border:2px solid;">Hello World</h1> pune textul din interior intr-o caseta neagra
+<h1 style="background-color:DodgerBlue;">Hello World</h1> schimba culoarea fundalului de sub Hello 
+World
+<h1 style="color:Tomato;">Hello World</h1> schimba culoarea textului "Hello World" in culoarea Tomato
+<h1 style="border:2px solid Tomato;">Hello World</h1> pune o caseta in jurul Hello World de culoare
+Tomato
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1> pune o caseta in jurul Hello World de 
+culoare DodgerBlue
+<h1 style="border:2px solid Violet;">Hello World</h1> pune o caseta in jurul Hello World de culoare
+Violet
+<h1 style="border:2px solid;">Hello World</h1> pune o caseta de culoare neagra in jurul textului
+Hello World
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<!-- rgb inseamna red green blue, iar cand folosesc optiunea asta, pot schimba culoarea in functie de
+cantitatea de red green blue, numerele sunt intre 0 si 255-->
+<h1 style="background-color:#ff6347;">...</h1>
+<!--optiunea cu hexazecimale care merg de la cea mai mica valoare 00 la cea mai mare ff (care este 
+egala cu 256) in ordinea r(RED)g(GREEn)b(BLUE). de exemplu, optiunea #ff0000 este red, deoarece
+aceasta optiune este echivalenta cu rgb(255, 0, 0);-->
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+<!--aceasta optiune este echivalenta cu setarea nuantei care poate fi una din 360 de culori, cu alte 
+cuvinte h(hue)(nuanta) merge de la 0 la 360, a saturatiei (care merge de la gri pana la 100% culoarea 
+originala) si a luminozitatii, care poate fi 100% (foarte luminos) sau 0% (foarte intunecat). Asadar,
+hsl(9,100%, 64%) denota o culoare cu hue(nuanta) 9, culoarea originala neavand pic de gri si 64% lumi-
+nozitate -->
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<!--aici a represinta gradul de transparenta al culorii, intre 0.0 si 1.0. 0.0 reprezinta transparenta
+completa, adica nu e pic de culoare, 1.0 reprezinta culoarea originala. Cu alta cuvinte, gradul de
+transparenta reprezinta cat de transparenta e culoarea, cat se vede prin ea-->
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+<!--a poate fi folosit cu rgba si hsla-->
+<!--negru=rgb(0,0,0), alb=rgb(255,255,255)-->
+<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1> <!--rosu-->
+<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1> <!--albastru-->
+<h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1> <!--verde-->
+<h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1> <!--liliac-->
+<h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1> <!--portocaliu-->
+<h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1> <!--mov-->
+<h1 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+<h1 style="background-color:rgb(100, 100, 100);">rgb(100, 100, 100)</h1>
+<h1 style="background-color:rgb(140, 140, 140);">rgb(140, 140, 140)</h1>
+<h1 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+<h1 style="background-color:rgb(200, 200, 200);">rgb(200, 200, 200)</h1>
+<h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
+<!--nuante de gri mai sus, pot fi stabilite dand valori egale tuturor parametrilor-->
+<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+<!--culoarea rosu, de la cel mai transparent la cel opac-->
+<h1 style="background-color:#ff0000;">#ff0000</h1>
+<h1 style="background-color:#0000ff;">#0000ff</h1>
+<h1 style="background-color:#3cb371;">#3cb371</h1>
+<h1 style="background-color:#ee82ee;">#ee82ee</h1>
+<h1 style="background-color:#ffa500;">#ffa500</h1>
+<h1 style="background-color:#6a5acd;">#6a5acd</h1>
+<!--rosu, albastru, verde, liliac, portocaliu si mov scrise cu coduri hexazecimale-->
+<h1 style="background-color:#404040;">#404040</h1>
+<h1 style="background-color:#686868;">#686868</h1>
+<h1 style="background-color:#a0a0a0;">#a0a0a0</h1>
+<h1 style="background-color:#bebebe;">#bebebe</h1>
+<h1 style="background-color:#dcdcdc;">#dcdcdc</h1>
+<h1 style="background-color:#f8f8f8;">#f8f8f8</h1>
+<!--de la un gri inchis la un gri foarte deschis-->
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+<h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+<h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+<h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+<h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+<!--rosu, albastru, verde, liliac, portocaliu, mov-->
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+<h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+<h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+<h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+<h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+<!--nuante frumoase de rosu-->
+<h1 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+<h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+<h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+<h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+<!--negru, visiniu, rosu aprins, rosu mai deschis, roz, alb-->
+<h1 style="background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h1>
+<h1 style="background-color:hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h1>
+<h1 style="background-color:hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h1>
+<h1 style="background-color:hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h1>
+<h1 style="background-color:hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h1>
+<h1 style="background-color:hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h1>
+<!--nuante de gri, de la cea mai inchisa la cea mai deschisa-->
+<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+<!--nuante de rosu din nou-->
+<h1 style="color:blue;">A Blue Heading</h1> <--inline CSS-->
+<h2>heading2</h2> the second most important heading
+<h2>Absolute URLs</h2>
+<h2>Relative URLs</h2>
+<h3>heading</h3> the third most important heading
+<h4>heading</h4> the fourth most important heading
+<h5>heading</h5> the fifth most important heading
+<h6>heading</h6> the least important heading
+<p>This is a paragraph.</p>
+<p>This is a <br> paragraph with a line break.</p> everything after <br> will be written on a new line
+<p style="color:red;">This is a red paragraph.</p> how to write a paragraph in a certain color
+<p title="I'm a tooltip">Add sentence here.</p> displays "Add sentence here" with the additional text
+"I'm a tooltip" if you hold your mouse over it a few secs. 
+<p title='John "ShotGun" Nelson'>John Nelson</p> 
+<p style="background-color:tomato;">This is a paragraph.</p> coloreaza paragraful de la inceput pana
+la final pe latimea fixa pre-definita a ecranului, dar continua pe cealalta linie
+<p style="color:red;">This is a paragraph.</p> paragraf incercuit in rosu
+<p style="font-family:courier;">This is a paragraph.</p> paragraf scris cu alt font
+<p style="font-size:160%;">This is a paragraph.</p> paragraf cu dimensiunea marita
+<p style="text-align:center;">Centered paragraph.</p> paragraf centrat pe pagina
+<p>Do not forget to buy <mark>milk</mark> today.</p> pot pune un cuvant din interiorul <p> in 
+background galben
+<p>My favorite color is <del>blue</del> red.</p> taie cuvantul intre del
+<p>This is <sub>subscripted</sub> text.</p> pune ,,subscripted" ca indice ca 2ul in H2O
+<p>This is <sup>superscripted</sup> text.</p> pune ,,superscripted" la exponent
+<p style="color:blue;"> paragraf aici </p>
+<p style="background-color:pink;"> alt paragraf </p>
+<p style="font-family:verdana;"> verdana </p> 
+<p style="font-size:60%;"> littler font </p>
+<p style="text-align:center;">text aligned to the center</p>
+<p style="background-color:Tomato;">Lorem ipsum...</p> culoarea rosiilor
+<p style="color:DodgerBlue;">Lorem ipsum...</p> schimba culoarea lui "Lorem ipsum..." in dodger blue
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p> schimba culoarea lui "Lorem ipsum..." in
+MediumSeaGreen
+<p style="color:red;">A red paragraph.</p> <--inline CSS-->
+<p><a href="https://www.w3.org/">W3C</a></p> <--URL absolut-->
+<p><a href="https://www.google.com/">Google</a></p> <--URL absolut-->
+<p><a href="html_images.asp">HTML Images</a></p> <--URL relativ, este un link catre o pagina de pe
+acelasi website-->
+<p><a href="/css/default.asp">CSS Tutorial</a></p> <--URL relativ, este un link catre o pagina de pe
+acelasi website-->
+<b>This text is bold.</b> - Bold text
+<strong>This text is important!</strong> - Important text
+<i>This text is italic</i> - Italic text
+<em>This text is emphasized</em> - text in italic
+<mark>mark this text</mark> - coloreaza backgroundul textului cu galben predefinit
+<small>text mai mic</small> - Smaller text
+<del>cuvantul</del> taie cuvantul
+<ins>cuvantul</ins> subliniaza cuvantul inserat
+<p>H<sub>2</sub>O</p> H2O cu 2 ca indice
+<p>2<sup>putere</sup></p> pune putere ca exponent
+<blockquoute cite="https://www.linkhere.html">word word word word word</blockquote> adauga un citat
+din sursa mentionata cu tab
+<q>pune ghilimele in jurul acestui text</q>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p> pune niste puncte
+puncte sub WHO si titlul World Health Organization cand tii mausul peste el
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address> adauga o noua linie inainte de <address> si mai adauga o noua linie dupa </address>
+scrie textul in italic
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p> "<cite>" este folosit pentru a defini
+titlul unei opere literare in italic
+<bdo dir="rtl">This text will be written from right to left</bdo> tfel ot thgir scrie textul de la 
+stanga la dreapta
+<br> adauga o noua linie
+<hr> Defines a thematic change in the content
+~horizontal rule, adauga o linie orizontala de culoare neagra nu merge in combinatie cu style
+<pre> preserve 
+text with spaces and. line 
+breaks
+</pre> will preserve the text with spaces and line breaks
+<a href="www.insertlinkhere.com">clickhereforthelink</a> how to add a sentence with a hyperlink
+<img src="an image.jpg" alt="text in case image does not work" width="104" height="142"> how to 
+insert an image
+<img src='link here if image is online' alt = 'the image was taken from online' width = '104'
+height='142'> works with apostrophe too
+<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+asa se pune un link pe o imagine
+<a href="mailto:someone@example.com">Send email</a> cum sa pui un hyperlink pentru a trimite un e-mail
+<p style="color:blue;"> paragraf aici </p> attribute for styling HTML elements - sch. cul. textului
+<p style="background-color:pink;"> alt paragraf </p> - sch. culoarea fundalului din spatele txtului
+<p style="font-family:verdana;">verdana</p> schimba fontul
+<p style="font-size:60%;"> littler font </p> for text sizes
+<p style="text-align:center;">text aligned to the center</p>- for text alignment
+<!-- scrie comentarii intre porcariile astea doua -->
+<!-- This is a comment -->
+
+<p>This is a paragraph.</p>
+
+<!-- Remember to add more information here --> paragraf intre doua comentarii
+<p>This is a paragraph.</p>
+
+<!-- <p>This is another paragraph </p> --> 
+
+<p>This is a paragraph too.</p> paragraf scos
+<p>This is a paragraph.</p>
+<!--
+<p>Look at this cool image:</p>
+<img border="0" src="pic_trulli.jpg" alt="Trulli">
+-->
+<p>This is a paragraph too.</p> o sectiune a codului scoasa
+<p>This <!-- great text --> is a paragraph.</p>o parte dintr-un paragraf scoasa
+<!--color names Tomato Orange DodgerBlue MediumSeaGreen Gray SlateBlue Violet LightGray-->
+
+<!--
+<pre> Urmatoarele chestii sunt puse in paranteze pentru ca modifica proprietatile intregii pagini HTML.
+Internal CSS defineste stilul pentru intreaga pagina HTML. Se defineste in sectiunea <style> din inte-
+riorul sectiunii <head> a unei pagini, inainte se inceapa sectiunea <body>. Sectiunea urmatoare face ca
+culoarea de fundal sa fie powderblue, culoarea tuturor titlurilor sa fie blue si culoarea tuturor para-
+grafelor sa fie red</pre>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+
+<pre> O foaie externa poate fi folosita pentru a defini stilul unor multe pagini HTML. Ca sa folosesti
+o foaie externa, adauga legatura in sectiunea cap a fiecarei pagini HTML:</pre>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<pre> Foaia externa de stil poate fi scrisa in orice editor de text. Fisierul nu trebuie sa contina 
+cod HTML si trebuie sa fie salvat cu extensia .css. Asa arata "styles.css":</pre>
+body {
+  background-color:powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+
+<pre>Voi demonstra cateva proprietati CSS folosite des. Vei invata mai multe despre ele mai tarziu.
+Proprietatea CSS culoare (color) defineste ce culoare va avea textul.
+Proprietatea familie de fonturi(font-family) defineste ce font va avea textul.
+Proprietatea dimensiune font(font-size) defineste ce dimensiune va avea textul.</pre>
+
+<head>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>Asta este un titlu modificat</h1>
+<p>Asta este un paragraf modificat</p>
+
+<p>urmatoarea secventa va defini o caseta in jurul tuturor paragrafelor din program:</p>
+p {
+  border: 2px solid powderblue;
+}
+
+<pre>urmatoarea secventa va defini o caseta dar si spatiul dintre caseta si paragraf, aplicabila pentru
+toate paragrafele din program:</pre>
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+
+<pre>Pe langa spatiul dintre caseta si paragraf, mai poate fi definita si o margine, un tab, cu ajuto
+rul optiunii margin:50px;</pre>
+p {
+  border: 2px solid powderblue;
+  margin: 50px;
+}
+
+<pre>urmatoarele sunt referinte catre fisierul css folosit. dupa cum stiu, exista mai multe documente
+intr-un fisier (documente css, html, imagini) ce impreuna construiesc o pagina pe panza:</pre>
+<pre>1) daca referinta este un website, voi folosi:</pre>
+<link rel="stylesheet" href="https://www.siteaici/html/cureferinta/styles.css">
+sau 
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+
+<pre> foaia de stil se afla in fisierul html din locatia curenta </pre>
+<link rel="stylesheet" href="/html/styles.css">
+
+<pre> urmatorul exemplu leaga o foaie de stil aflata in acelasi fisier ca pagina curenta:</pre>
+<link rel="stylesheet" href="styles.css">
+
+
+-->
+
+<a href="https://www.google.ro/?hl=ro">Da click aici pentru a accesa Google.</a> cod care nu merge,
+probabil pentru ca asta merge doar daca am toate linkurile salvate local, google inseamna tot, deci
+nu pot sa il folosesc in stil cascada
+<a href="https://www.google.ro/?hl=ro" target="_blank">deschide google intr-o foaie noua</a>
+<a href="https://codepen.io/masterofthecode/pen/gOvWQqj" target="_self">deschide o lucrare de pe codepen
+a lui master of the code aici</a>  
+<a href="https://codepen.io/masterofthecode/pen/gOvWQqj" target="_parent">deschide peste pagina pe care
+ma aflu curent pagina din link, adica o lucrare de pe codepen a lui master of the code, afisand mesajul
+"Leave site? Changes may be unsaved"</a>
+<a href="https://codepen.io/masterofthecode/pen/gOvWQqj" target="_parent">bla bla bla</a> face acelasi
+lucru ca target="parent"
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML 
+Tutorial</a> pune un titlu (tag) peste hiperlink
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button> cum sa faci un buton
+
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none; <!--asta va scoate linia de sub hiperlegatura-->
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+<!-- asa se schimba culorile predefinite in alte culori -->
+
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+<!--asa se face un buton colorat-->
+
+<h2 id="C4">Chapter 4</h2> <!--prima data se atribuie un id unei linii de cod din text-->
+
+<a href="#C4">Jump to Chapter 4</a> <!--apoi se face un buton cu o referinta catre chestia aia-->
+
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+  </style>
+  <h2 id="c4";>Chapter 4</h2>
+  <a href="#c4">Jump to chapter 4</a>
+<!--toata aceasta parte constituie un buton catre capitolul 4 existent deja in pagina panza-->
+
+
+file -> save as -> all types -> namefile.htm asa convertesc ce am lucrat in notepad intr-o pagina web 
+unde pot vedea ce am lucrat
+https://www.w3schools.com/html/html_images.asp codul unde urmeaza sa incep
+https://www.w3schools.com/python/python_casting.asp - python
+

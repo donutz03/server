@@ -1,0 +1,45 @@
+{\rtf1\ansi\deff0 {\fonttbl{\f0\fnil ;}}
+{\info {\author Attaullah Shah}{\company IMSciences}{\title .}}
+\deflang1033\plain
+{\footer\pard\qc\plain\f0\chpgn\par}
+{
+{
+{\b\qc\line Descriptive Statistics }{\par}
+\trowd\trgaph108\trleft-108\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx3000\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx3800\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx5200\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx6600\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx8000\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx9400
+\ql { {Variable}}\cell
+\qr { {Obs}}\cell
+\qr { {Mean}}\cell
+\qr { {Std. Dev.}}\cell
+\qr { {Min}}\cell
+\qr { {Max}}\cell
+\row
+\trowd\trgaph108\trleft-108\cellx3000\cellx3800\cellx5200\cellx6600\cellx8000\cellx9400
+\ql { {(firstnm) mkvalt}}\cell
+\qr {{454}}\cell
+\qr {{69135.392}}\cell
+\qr {{175367.84}}\cell
+\qr {{3667.936}}\cell
+\qr {{1966078.9}}\cell
+\row
+\ql { {(firstnm) at}}\cell
+\qr {{468}}\cell
+\qr {{88432.639}}\cell
+\qr {{274782.95}}\cell
+\qr {{1200.102}}\cell
+\qr {{3386071}}\cell
+\row
+\ql { {Natural Logarithm of Total Asset}}\cell
+\qr {{468}}\cell
+\qr {{10.209}}\cell
+\qr {{1.362}}\cell
+\qr {{7.09}}\cell
+\qr {{15.035}}\cell
+\row
+}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw15\brdrs\cellx9400{}\cell
+\row}
+
+
+\writepositionforappend
+}}

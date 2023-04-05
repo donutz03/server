@@ -1,0 +1,6 @@
+@PostMapping
+@ResponseStatus
+
+dupa 33 de minute din sedinta pot sa vad cum fac eroarea aia 400
+
+- pana la min 38

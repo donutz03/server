@@ -1,0 +1,26 @@
+<?php
+require 'connect.php';
+header("Access-Control-Allow-Origin: http://127.0.0.1:5173");
+header('Acecess-Control-Allow-Methods: GET, POST, OPTIONS');
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+
+$postdata = file_get_contents("php://input");
+if(isset($postdata) && !empty($postdata)) {
+    $request = json_decode($postdata);
+    $firstname = $request->firstName;
+    $lastname = $request->lastName;
+    $email = $request->email;
+    $phone = $request->phoneNumber;
+    $password = $request->password;
+    $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
+    $password = $encrypted_password;
+    $sql = "INSERT INTO users (firstname, lastname, email,phone,password) VALUES ('$firstname','$lastname','$email','$phone','$password')";
+    if(mysqli_query($db,$sql)){
+        http_response_code(201);
+    }
+    else{
+         http_response_code(422); 
+    }
+         
+}
+?>
