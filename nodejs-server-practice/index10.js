@@ -57,9 +57,9 @@ books.list((err,body)=> {
 // npm install level levelup leveldown
 const levelup = require('levelup')
 const db = levelup('./mydb')
-db.put('name','LevelUP', (err)) => {
+db.put('name','LevelUP', (err) => {
     if (err) return console.log('Ooops!', err)
-}
+})
 
 db.get('n', (err, val) => {
     if (err) return console.log('a', err);
