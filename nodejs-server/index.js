@@ -1,31 +1,39 @@
-const http=require('http');
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
 
-const server = http.createServer((req,res)=>{
-    const url = req.url;
+const app = express();
 
-    if (url === '/') {
-        res.setHeader('content-type','text/html');
-        res.write('<h1 style="color:green">Hello Ionut</h1>');
-        res.end();
-    } else if (url==='/json') {
-        res.setHeader('content-type', 'application/json');
-        const object = {
-            prop: 1,
-            prop2: [1,2,3],
-            prop3: "test",
-        };
-        res.end(JSON.stringify(object));
-    }
-else {
-        res.setHeader('content-type','text/html');
-        res.write('<h1 style="color:red">Path not found</h1>');
-        res.end();
-    }
+app.use(bodyParser.json({ limit: "25mb" }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-    console.log(url);
-   
+const publicPath = path.resolve(__dirname, "public");
+app.use(express.static(publicPath));
 
+app.get("/login", (req, res) => {
+  const body = req.body;
+  console.log(body);
+  res.send("Login route");
 });
 
-const PORT=3000;
-server.listen(PORT, ()=>console.log(`server is running on port ${PORT}`));
+app.get("/params", (req, res) => {
+  const queryParams = req.query;
+  console.log(queryParams);
+  const a = +queryParams.a;
+  const b = +queryParams.b;
+  res.send(a * b + "");
+});
+
+app.get("/", (req, res) => {
+  res.send("Route with no params");
+});
+
+app.get("/:id", (req, res) => {
+  const id = parseInt(req.params.id, 10);
+  console.log(id * id);
+  const response = "" + id * id;
+  res.send(response);
+});
+
+const PORT = 3000;
+app.listen(PORT, () => console.log(`server is running on port ${PORT}`));
